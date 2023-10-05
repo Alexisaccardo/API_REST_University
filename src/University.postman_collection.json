@@ -1,0 +1,152 @@
+{
+	"info": {
+		"_postman_id": "a89ba94f-b7ab-4d02-aa73-7bd37e274042",
+		"name": "University",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29027861"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"course\": \"Vigilancia\",\r\n     \"teacher\": \"Michael\",\r\n     \"number_students\": \"30\",\r\n     \"schedule\":\"Lunes a viernes\",\r\n     \"semester\":\"Cuatro\",\r\n     \"working_day\":\"Nocturno\",\r\n     \"campus\": \"Simon bolivar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/register",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"course\": \"Vigilancia\",\r\n     \"teacher\": \"Michael\",\r\n     \"number_students\": \"30\",\r\n     \"schedule\":\"Lunes a viernes\",\r\n     \"semester\":\"cinco\",\r\n     \"working_day\":\"Diurno\",\r\n     \"campus\": \"Simon bolivar\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/edit",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"edit"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search_course",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/search_course",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search_course"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "search_one",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/search_one/Vigilancia",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"search_one",
+						"Vigilancia"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete_course",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"course\": \"septimo\"\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/delete_course",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"delete_course"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
